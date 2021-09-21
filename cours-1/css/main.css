@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+@import url('./base.css');
+@import url('./bio.css');
+@import url('./nav.css');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  color: #8d659b;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+p {
+  color: #37364c;
+}
+
+.colorX {
+  color: #41c8cb;
+  font-weight: bold;
+}
+
+header {
+  background-color: white;
+  height: 90vh;
+  display: flex;
+  position: relative;
+}
+
+header svg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 40px;
+  transform: translateX(-50%);
+  animation: bounce 1.2s ease infinite;
+}
+
+@keyframes bounce {
+  from {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+.header-illustration {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text {
+  flex: 0 0 40%;
+  padding-left: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header-text h3 {
+  font-size: 4.5em;
+  margin-bottom: 0;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.header-text p {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+/* #eeedef */
+/* #8d659b */
+/* #41c8cb */
+/* #37364c */
+/* #b48e64 */
