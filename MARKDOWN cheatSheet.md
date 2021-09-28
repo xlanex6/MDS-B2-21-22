@@ -1,10 +1,25 @@
-# Titre 1
+```
+# Headings 1
+## Headings 2
+### Headings 3
+#### Headings 4
+##### Headings 5
+###### Headings 6
+```
 
-## Titre 2
+# Headings 1
 
-### Titre 3
+## Headings 2
 
-#### Titre 4
+### Headings 3
+
+#### Headings 4
+
+##### Headings 5
+
+###### Headings 6
+
+---
 
 mon text de presentation
 
