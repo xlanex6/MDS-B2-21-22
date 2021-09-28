@@ -1,0 +1,11 @@
+.btn {
+  background-color: $alice;
+  padding: 20px 30px;
+  color: $ming;
+}
+
+.btn_special {
+  @include btn;
+  border: 1px solid black;
+  color: darken($ming, 10%);
+}

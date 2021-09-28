@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  width: 1200px;
+}
+
+#app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 266px auto 380px;
+  grid-template-rows: 80px auto;
+  grid-template-areas:
+    'nav nav nav'
+    'left main right';
+}
+
+left-side {
+  grid-area: left;
+  background-color: #4444;
+}
+right-side {
+  grid-area: right;
+  background-color: #5555;
+}
+main {
+  grid-area: main;
+  background-color: #eeee;
+
+  display: grid;
+  grid-template-columns: 200px 500px;
+  grid-template-rows: 80px 650px;
+  grid-template-areas:
+    'main-header main-header'
+    'main-side apps';
+}
+
+nav {
+  grid-area: nav;
+  background-color: #252a30;
+}
+
+#main-header {
+  grid-area: main-header;
+  background-color: green;
+}
+#main-side {
+  grid-area: main-side;
+  background-color: red;
+}
+#apps {
+  grid-area: apps;
+  background-color: ligthgray;
+
+  display: grid;
+  gap: 10px;
+
+  overflow-y: scroll;
+}
+
+app {
+  background-color: cyan;
+  padding: 12px;
+}
