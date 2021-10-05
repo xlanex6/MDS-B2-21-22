@@ -1,0 +1,16 @@
+//  colors
+
+$main-color1: #f12711;
+$main-color2: #f5af19;
+$fill: #292929;
+
+// size
+$container-width: 800px;
+$font-base: 16px; // 1em
+$main-gradient: linear-gradient(to right, $main-color1, $main-color2);
+
+$header-heigth: 300px;
+
+// font
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+$main-font: 'Oswald';

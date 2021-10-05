@@ -13,6 +13,7 @@
     "sass": "^1.42.1"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "rellax": "^1.12.1"
   }
 }

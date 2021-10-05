@@ -1,1 +1,3 @@
-console.log('coucou les gens');
+import Rellax from "rellax";
+
+const rel = new Rellax('.rellax');

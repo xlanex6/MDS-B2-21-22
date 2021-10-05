@@ -1,0 +1,11 @@
+.container {
+  width: $container-width;
+  margin: auto;
+}
+
+.text-gradient {
+  background: $main-gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

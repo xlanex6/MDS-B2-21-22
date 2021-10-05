@@ -1,0 +1,60 @@
+//  blog
+.main-img {
+  border-radius: 15px;
+  object-fit: cover;
+  transform: translateY(-30%);
+  box-shadow: 5px 5px 10px rgba(80, 80, 80, 0.527);
+}
+
+.post-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    @extend .text-gradient;
+    font-size: 4.375em;
+    text-transform: uppercase;
+  }
+
+  .social-btn {
+    &:first-child {
+      margin-right: 10px;
+    }
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 3px transparent;
+    transition: all 2s;
+    &:hover {
+      background: $main-gradient;
+      cursor: pointer;
+      border: solid 2px $main-color1;
+      i {
+        color: white;
+      }
+    }
+    i {
+      @extend .text-gradient;
+    }
+  }
+}
+
+#content {
+  color: $fill;
+  p {
+    margin-top: 2.6em;
+    font-size: 1.4em;
+    line-height: 2em;
+    letter-spacing: 0.00625em;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 2.25em;
+    margin-top: 2.25em;
+  }
+  img {
+    width: 100%;
+  }
+}
