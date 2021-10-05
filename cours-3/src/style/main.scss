@@ -4,6 +4,7 @@
 @import './blog';
 @import './utils';
 @import './headers';
+@import './bubble';
 
 // buttons
 
@@ -11,34 +12,4 @@ body {
   font-family: $main-font, sans-serif;
   font-size: $font-base;
   position: relative;
-}
-
-svg {
-  width: 350px;
-  height: 350px;
-  fill: $main-color2;
-  opacity: 0.3;
-}
-#blob-1 {
-  position: absolute;
-  // top: 25%;
-  // fill: green;
-}
-#blob-2 {
-  position: absolute;
-  // fill: blue;
-  right: 0;
-  top: 5%;
-  z-index: -1;
-}
-#blob-3 {
-  position: absolute;
-  // fill: violet;
-  bottom: 0;
-}
-#blob-4 {
-  position: absolute;
-  // fill: cyan;
-  bottom: 25%;
-  right: 0;
 }
