@@ -1,0 +1,68 @@
+@import 'normalize.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+// @import url('https://rawcdn.githack.com/hung1001/font-awesome-pro/4cac1a6/css/all.css');
+
+$blue-gradient: linear-gradient(to right, #11998e, #38ef7d);
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+  background: $blue-gradient; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 200px;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+}
+
+.main-img {
+  border-radius: 15px;
+  object-fit: cover;
+  transform: translateY(-30%);
+  box-shadow: 5px 5px 10px rgba(80, 80, 80, 0.527);
+}
+
+.text-gradient {
+  background: $blue-gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.post-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    @extend .text-gradient;
+    font-size: 70px;
+    text-transform: uppercase;
+  }
+
+  .social-btn {
+    &:first-child {
+      margin-right: 10px;
+    }
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 3px transparent;
+    transition: all 2s;
+    &:hover {
+      background: $blue-gradient;
+      cursor: pointer;
+      border: solid 2px #0083b0;
+      i {
+        color: white;
+      }
+    }
+    i {
+      @extend .text-gradient;
+    }
+  }
+}
