@@ -1,0 +1,59 @@
+nav {
+  display: grid;
+  grid-template-columns: 90px auto 70px;
+  grid-template-rows: 90px auto;
+  // transition: all 2s ease-in;
+  grid-template-areas:
+    'logo . icon'
+    'menu menu menu';
+  #logo {
+    grid-area: logo;
+    font-size: 50px;
+  }
+  button {
+    border: none;
+    background-color: inherit;
+    color: black;
+    grid-area: icon;
+  }
+  &:hover {
+    #menu {
+      display: block;
+    }
+  }
+}
+
+#menu {
+  display: none;
+  grid-area: menu;
+  background-color: white;
+
+  #links {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    a {
+      padding: 0.25em 0.5em;
+      &:hover {
+        background-color: rgb(225, 225, 225);
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 2000px) {
+  nav {
+    grid-template-columns: 50px auto;
+    grid-template-rows: 80px;
+    grid-template-areas: 'logo menu';
+    button {
+      display: none;
+    }
+  }
+  #menu {
+    display: block;
+    #links {
+      justify-content: end;
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 1em;
+  grid-template-areas:
+    'name email'
+    'message message'
+    'cta cta';
+}
+#message-container {
+  grid-area: message;
+}
+#email-container {
+  grid-area: email;
+}
+#name-container {
+  grid-area: name;
+}
+#cta-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  grid-area: cta;
+  button {
+    background-color: $main-color1 !important;
+    color: white;
+    font-size: 1.5em;
+    @extend .input-common-design;
+  }
+}
+.input-common-design {
+  background-color: rgb(223, 223, 223);
+  border-radius: 10px;
+  border: none;
+  outline-color: $main-color1;
+  padding: 5px 15px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  color: rgb(116, 116, 116);
+  input {
+    @extend .input-common-design;
+    height: 1.8em;
+  }
+  textarea {
+    padding: 0.5em;
+    @extend .input-common-design;
+  }
+}

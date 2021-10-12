@@ -1,0 +1,86 @@
+.sport-category {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    h3 {
+      display: block;
+    }
+    .bg {
+      background-color: rgba(0, 0, 0, 0.388);
+    }
+  }
+  h3 {
+    color: white;
+    font-size: 3em;
+    display: none;
+  }
+}
+#cat-1 {
+  grid-area: sport;
+}
+#cat-2 {
+  grid-area: sport-2;
+}
+#cat-3 {
+  grid-area: sport-3;
+}
+#cat-4 {
+  grid-area: sport-4;
+}
+#cat-5 {
+  grid-area: sport-5;
+}
+#cat-6 {
+  grid-area: sport-6;
+}
+#cat-7 {
+  grid-area: sport-7;
+}
+#cat-8 {
+  grid-area: sport-8;
+}
+
+#sports {
+  display: grid;
+  gap: 1em;
+  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'sport sport-2'
+    'sport-3 sport-4'
+    'sport-5 sport-6'
+    'sport-7 sport-8';
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #sports {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'sport  sport sport-2'
+      'sport-3  sport-4 sport-4'
+      'sport-5 sport-5 sport-6'
+      'sport-7 sport-8 sport-8';
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+  #sports {
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas:
+      'sport sport sport sport-2'
+      'sport-3 sport-3 sport-3 sport-4'
+      'sport-5 sport-6 sport-6 sport-4'
+      'sport-7 sport-7 sport-8 sport-8';
+  }
+}

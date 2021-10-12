@@ -1,0 +1,26 @@
+svg {
+  width: 350px;
+  height: 350px;
+  fill: $main-color2;
+  opacity: 0.3;
+}
+#blob-1 {
+  position: absolute;
+}
+#blob-2 {
+  position: absolute;
+  fill: $main-color1;
+  right: 0;
+  top: 5%;
+  z-index: -1;
+}
+#blob-3 {
+  position: absolute;
+  fill: $main-color1;
+  bottom: 0;
+}
+#blob-4 {
+  position: absolute;
+  bottom: 25%;
+  right: 0;
+}
