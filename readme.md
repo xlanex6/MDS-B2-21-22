@@ -4,6 +4,12 @@
 npm init -y
 ```
 
+```
+parcel --version
+```
+
+Version 1.12.5
+
 creer les dossiers et fichies
 
 Lancer le serveur de dev
