@@ -18,10 +18,10 @@ form {
   grid-area: name;
 }
 #cta-container {
+  grid-area: cta;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  grid-area: cta;
   button {
     background-color: $main-color1 !important;
     color: white;

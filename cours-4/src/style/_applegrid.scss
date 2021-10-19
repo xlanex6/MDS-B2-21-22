@@ -1,0 +1,36 @@
+$bg: #d4d4d4;
+$boticelli: #cadae7;
+$names: 'screen' 'hands' 'siri' 'madame' 'ipad' 'widget' 'paint' 'size'
+  'settings' 'brigthness' 'mamy' 'pencil' 'theme';
+
+#gallery {
+  display: grid;
+  grid-template-columns: 20% 7.5% 20% 20% 7.5% 25%;
+  grid-template-rows: 12.75% 12.75% 7.5% 22% 11% 7.5% 12.75% 12.75%;
+  grid-template-areas:
+    'screen screen hands siri madame madame'
+    'ipad ipad ipad siri madame madame'
+    'ipad ipad ipad widget madame madame'
+    'ipad ipad ipad widget paint paint'
+    'ipad ipad ipad widget size size'
+    'ipad ipad ipad pencil pencil theme'
+    'settings mamy mamy pencil pencil theme'
+    'settings mamy mamy pencil pencil brigthness';
+  gap: 10px;
+  height: 80vh;
+  margin: auto;
+}
+
+@each $name in $names {
+  ##{$name} {
+    grid-area: #{$name};
+  }
+}
+
+#ipad {
+  background-color: $boticelli;
+}
+
+.card {
+  background-color: $bg;
+}
