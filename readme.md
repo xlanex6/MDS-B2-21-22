@@ -21,7 +21,7 @@ parcel serve src/*.* watch
 Une fois le dev fini, construire le site avec
 
 ```
-parcel build src/index.html
+parcel build src/index.html --no-minify
 ```
 
 puis prendre le dossier `.dist`
